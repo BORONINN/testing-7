@@ -40,6 +40,10 @@ docker compose -f app/compose.yaml up -d
 
 ## Отчёты
 
+Для публикации отчётов через GitHub Pages владелец репозитория выбирает Settings > Pages > Source > GitHub Actions. Затем в Actions запускается workflow `Publish test reports` через Run workflow. При последующих изменениях папки `reports` в `main` публикация запускается автоматически.
+
+После успешного развёртывания общая страница будет доступна по адресу https://boroninn.github.io/testing-7/, итоговый отчёт по адресу https://boroninn.github.io/testing-7/final/.
+
 - `reports/final`: итоговый прогон, 16 passed, 0 failed.
 - `reports/initial`: первый прогон, 15 passed, 1 failed. P04 не смог кликнуть по размеру страницы: слой `mat-mdc-paginator-touch-target` перехватывает указатель. Исходная версия тестов сохранена в `test-snapshots/catalog.initial.js`.
 - `reports/demo`: учебный прогон, 15 passed, 1 failed. В C01 намеренно задано неверное ожидание 16 вместо 15.
