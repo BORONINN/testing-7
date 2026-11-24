@@ -1,0 +1,808 @@
+{
+  "config": {
+    "argv": [
+      "/Users/egor/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/node_modules/@playwright/test/cli.js",
+      "test"
+    ],
+    "configFile": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/playwright.config.js",
+    "rootDir": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "assignment": "Практическая работа 7. Вариант 1. Каталог товаров",
+      "application": "OWASP Juice Shop 20.4.0-SNAPSHOT",
+      "run": "Итоговый исправленный прогон",
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/test-results/final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "assignment": "Практическая работа 7. Вариант 1. Каталог товаров",
+          "application": "OWASP Juice Shop 20.4.0-SNAPSHOT",
+          "run": "Итоговый исправленный прогон",
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/test-results/final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "assignment": "Практическая работа 7. Вариант 1. Каталог товаров",
+          "application": "OWASP Juice Shop 20.4.0-SNAPSHOT",
+          "run": "Итоговый исправленный прогон",
+          "actualWorkers": 2
+        },
+        "name": "chromium",
+        "testDir": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/tests",
+        "snapshotDir": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "locale": "en-US",
+          "timezoneId": "Europe/Moscow",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/final",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/final.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "catalog.spec.js",
+      "file": "catalog.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Каталог",
+          "file": "catalog.spec.js",
+          "line": 40,
+          "column": 6,
+          "specs": [
+            {
+              "title": "C01 Первая страница содержит 15 товаров",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Проверить количество карточек: 15",
+                          "duration": 8
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:08.542Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-79b713b6c5448b698838",
+              "file": "catalog.spec.js",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "C02 Карточка показывает цену Apple Juice",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 954,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T16:15:08.542Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-69f42f01de62d8bebc21",
+              "file": "catalog.spec.js",
+              "line": 49,
+              "column": 3
+            },
+            {
+              "title": "C03 Изображение товара загружено",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 914,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T16:15:09.689Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-cd2bbf48e502b0aa95dc",
+              "file": "catalog.spec.js",
+              "line": 53,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Карточка товара",
+          "file": "catalog.spec.js",
+          "line": 60,
+          "column": 6,
+          "specs": [
+            {
+              "title": "D01 Открытие показывает название выбранного товара",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 885,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Открыть карточку Apple Juice",
+                          "duration": 84
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:09.714Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-09cae82ad6397229ecd9",
+              "file": "catalog.spec.js",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "D02 В диалоге показано описание товара",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 807,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Открыть карточку Apple Juice",
+                          "duration": 136
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:10.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-bae902c2383c8369d569",
+              "file": "catalog.spec.js",
+              "line": 66,
+              "column": 3
+            },
+            {
+              "title": "D03 Цена в диалоге совпадает с карточкой",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 754,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Открыть карточку Apple Juice",
+                          "duration": 50
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:10.609Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-c63001d6bffcda30f553",
+              "file": "catalog.spec.js",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "D04 Кнопка Close закрывает диалог",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1111,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Открыть карточку Apple Juice",
+                          "duration": 82
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:11.367Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-3469a537e2ac1b4a18b7",
+              "file": "catalog.spec.js",
+              "line": 77,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Поиск",
+          "file": "catalog.spec.js",
+          "line": 84,
+          "column": 6,
+          "specs": [
+            {
+              "title": "S01 Поиск по полному названию находит товар",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 837,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Поиск: Banana Juice (1000ml)",
+                          "duration": 130
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:11.420Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-60bb86bae6e8711b9b9f",
+              "file": "catalog.spec.js",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "S02 Поиск по части названия находит товар",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 722,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Поиск: Banan",
+                          "duration": 124
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:12.264Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-b4dc591709244546613d",
+              "file": "catalog.spec.js",
+              "line": 91,
+              "column": 3
+            },
+            {
+              "title": "S03 Поиск не зависит от регистра",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 863,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Поиск: bAnAnA jUiCe",
+                          "duration": 79
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:12.489Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-3eb910ad02560af56975",
+              "file": "catalog.spec.js",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "S04 Несуществующее название даёт пустую выдачу",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 837,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Поиск: zzpr7nomatchzz",
+                          "duration": 23
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:12.991Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-d84153849ff73afb40f0",
+              "file": "catalog.spec.js",
+              "line": 103,
+              "column": 3
+            },
+            {
+              "title": "S05 Очистка поиска возвращает каталог",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1014,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Поиск: Banana Juice (1000ml)",
+                          "duration": 86
+                        },
+                        {
+                          "title": "Поиск: (пустая строка)",
+                          "duration": 19
+                        }
+                      ],
+                      "startTime": "2026-11-24T16:15:13.359Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-d78b4bf5a77c59a4a2c1",
+              "file": "catalog.spec.js",
+              "line": 109,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Пагинация",
+          "file": "catalog.spec.js",
+          "line": 118,
+          "column": 6,
+          "specs": [
+            {
+              "title": "P01 На первой странице Previous недоступна",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 710,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T16:15:13.833Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-032b6af541e38d2ccc62",
+              "file": "catalog.spec.js",
+              "line": 119,
+              "column": 3
+            },
+            {
+              "title": "P02 Next открывает вторую страницу",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1697,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T16:15:14.378Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-a3022fa9fc21d2c77452",
+              "file": "catalog.spec.js",
+              "line": 123,
+              "column": 3
+            },
+            {
+              "title": "P03 Previous возвращает первую страницу",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1732,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T16:15:14.551Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-0810857bacf8455914d4",
+              "file": "catalog.spec.js",
+              "line": 129,
+              "column": 3
+            },
+            {
+              "title": "P04 Выбор размера 30 показывает 30 товаров",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30212,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-24T16:15:16.081Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/test-results/final/catalog-Пагинация-P04-Выбор-размера-30-показывает-30-товаров-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/test-results/final/catalog-Пагинация-P04-Выбор-размера-30-показывает-30-товаров-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/egor/Documents/ChatGPT/ТЕСТИРОВАНИЕ/pr7-catalog/test-results/final/catalog-Пагинация-P04-Выбор-размера-30-показывает-30-товаров-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d4514cd69630520b3123-8dd453d7139e458d4cde",
+              "file": "catalog.spec.js",
+              "line": 137,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-24T16:15:08.343Z",
+    "duration": 38114.058000000005,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

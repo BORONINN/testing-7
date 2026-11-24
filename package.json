@@ -1,0 +1,14 @@
+{
+  "name": "pr7-juice-shop-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Практическая работа 7. Тестирование каталога OWASP Juice Shop",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report reports/final --host 127.0.0.1 --port 9323",
+    "report:demo": "playwright show-report reports/demo --host 127.0.0.1 --port 9324"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}
