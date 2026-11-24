@@ -18,7 +18,7 @@ module.exports = defineConfig({
   metadata: {
     assignment: 'Практическая работа 7. Вариант 1. Каталог товаров',
     application: 'OWASP Juice Shop 20.4.0-SNAPSHOT',
-    run: run === 'demo' ? 'Учебное неверное ожидание C01' : 'Итоговый исправленный прогон',
+    run: run === 'demo' ? 'Учебное неверное ожидание C01' : 'Итоговый прогон каталога товаров',
   },
   use: {
     baseURL: process.env.BASE_URL || 'http://127.0.0.1:3000',

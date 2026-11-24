@@ -139,4 +139,9 @@ test.describe('Пагинация', () => {
     await page.getByRole('option', { name: '30', exact: true }).click();
     await expect(cards(page)).toHaveCount(30);
   });
+
+  test('P05 Клик мышью открывает выбор количества товаров каталога', async ({ page }) => {
+    await page.getByRole('combobox', { name: 'Items per page:' }).click();
+    await expect(page.getByRole('option', { name: '30', exact: true })).toBeVisible();
+  });
 });
